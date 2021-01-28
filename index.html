@@ -70,7 +70,164 @@
         
         document.write(arr346);
 
+// домашка на 30.01
+        // Задача № 1
 
+// Задача № 2
+
+ //Задача № 3
+ //Описание задачи: Написать функцию, которая делает все буквы в каждом элементе массива заглавными.
+/*
+let arr = ['написать', 'функцию,', 'которая', 'делает', 'все', 'буквы', 'в', 'каждом', 'элементе', 'массива', 'заглавными'];
+for(let item of arr) {
+document.write(item.toUpperCase(arr) + ' ');
+}
+*/
+
+// Задача № 4
+
+// Задача № 5
+
+// Задача № 6
+//Описание задачи: Написать функцию, которая разворачивает массив в обратном порядке. Не используя реверс.
+/*
+let array = [1, 2, 3];
+function withoutReverse(array) {
+let arrayRev = [];
+while(array.length) {
+arrayRev.push(array.pop());
+}
+return arrayRev;
+}
+document.write(withoutReverse(array));
+*/
+
+// Задача № 7
+
+// Задача № 8
+//Описание задачи: Написать функцию copyArr(arr), которая копирует массив не изменяя оригинал.
+/*
+const vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+function copyArr(arr) {
+return vegetables.slice(0);
+}
+let arr = copyArr();
+document.write(vegetables + '<br>');
+document.write(arr);
+*/
+
+// Задача № 9
+//Описание задачи: Написать код, который преобразовывает и объединяет все элементы массива в одно строковое значение. Элементы массива будут разделены запятой.
+/*
+const vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+let str = vegetables.join(', ').toString();
+document.write(str);
+*/
+
+// Задача № 10
+
+// Задача № 11
+
+// Задача № 12
+
+// Задача № 13
+
+// Задача № 14
+//Описание задачи: Написать функцию getFirst(array, n), которая возвращает фрагмент массива, содержащий первые n элементов массива.
+/*
+let n = prompt('Количество элементов', '');
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function getFirst(array, n) {
+if (array == null) return false;
+if (n == null) return array[0];
+return array.slice(0, n);
+};
+document.write(getFirst(array, n));
+*/
+
+// Задача № 15
+
+// Задача № 16
+//Описание задачи: Написать функцию sumOfSquares(arr), которая возвращает сумму квадратов значений массива 
+/*
+let arr = [1, 2, 3, 4, 5];
+let squares = arr.map(function sumOfSquares (currentValue) {
+return currentValue ** 2;
+});
+let sum = squares.reduce(function(a, b) {
+return a + b;
+});
+document.write('Квадраты элементов: ' + squares);
+document.write('<br>' + 'Сумма элементов: ' + sum);
+*/
+
+// Задача № 17
+//Описание задачи: Написать код, который определяет сумму и произведение значений массива.
+/*
+let arr = [1, 2, 3, 4, 5, 6 ,7 ,8 ,9];
+let sum = arr.reduce(function(a, b) {
+return a + b;
+});
+let product = arr.reduce(function(a, b) {
+return a * b;
+});
+document.write('Сумма = ' + sum);
+document.write('<br>' + 'Произведение = ' + product);
+*/
+
+// Задача № 18
+
+// Задача № 19
+//Описание задачи: Написать функцию moveElement(arr,from,to), которая позволяет переместить элемент массива из позиции from в позицию to.
+/*
+function moveElement(arr,from,to) {
+arr.splice(to,0,arr.splice(from,1)[0]);
+return arr;
+};
+var arr = [ 'a', 'b', 'c', 'd', 'e'];
+document.writeln(moveElement(arr,3,1));
+*/
+
+
+
+// Задача № 20
+//Описание задачи: Написать функцию generateRange(start, end), которая генерирует массив заданной длины len, заполненный целыми числами. Каждое последующее число в массиве должно быть больше предыдущего на единицу.
+/*
+let a = prompt('Начать с числа', '');
+let l = prompt('Длина массива', '');
+function generateRange(start, end) {
+var arr = new Array(l);
+for (var i = 0; i < l; i++, start++) {
+arr[i] = start;
+}
+return arr;
+}
+document.write(generateRange(a));
+*/
+
+// Задача № 21
+//Описание задачи: Используя метод map() написать код, который получает из массива строк новый массив, содержащий их длины.
+/*
+const vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+let vegetablesLength = vegetables.map(function(value) {
+return value.length;
+});
+document.write(vegetablesLength);
+*/
+
+// Задача № 22
+
+// Задача № 23
+
+// Задача № 24
+//Описание задачи: Написать код, объединяющий три массива цифр.
+/*
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+const c = [7, 8, 9];
+const d = a.concat(b, c);
+document.write(d.reverse());
+*/
 
 
 
