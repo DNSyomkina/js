@@ -1,0 +1,37 @@
+        // let arr = [1, 2, 3];
+        // let it = arr[Symbol.iterator](); //  переменная для прохода по массива
+        // let res = it.next();
+
+        // while(!res.done) { 
+            
+        //     document.write(res.value);
+        //     res = it.next();
+            
+        // } 
+
+  
+        // function funcName() {
+        //     alert( 'hallo!' );
+        // }
+
+        // funcName();
+
+        // let i = function(x) {
+        //     alert( 'hallo' )
+        // }
+
+        // i();
+
+// handmade map function
+
+        function myMap(arr, callback) {
+            const result = [];
+            for (let i = 0; i < arr.length; i++) {
+                const item = arr[i];
+                result.push(callback(item));
+                
+            }
+            return result;
+        }
+
+        document.write(myMap([1, 2, 3, 6], x => x * 2));
